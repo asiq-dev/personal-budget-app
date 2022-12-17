@@ -6,60 +6,71 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:layout_margin="20dp"
+    android:background="@drawable/logo"
     tools:context=".RegistrationActivity">
 
 
-    <TextView
-        android:id="@+id/loginPage"
-        android:layout_marginBottom="30dp"
-        android:textSize="30sp"
-        android:textColor="#000"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registration Page"
-        android:gravity="center"/>
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <ImageView
-        android:layout_margin="10dp"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/applogo" />
+        <TextView
+            android:id="@+id/loginPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="Registration Page"
+            android:textColor="#fff"
+            android:textSize="30sp" />
 
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/money" />
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint="Enter Email"
-        android:textColor="#000"
-        android:inputType="textEmailAddress"
-        android:textSize="20sp"
-        android:textColorHint="#000" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint="Enter Password"
-        android:textColor="#000"
-        android:inputType="textPassword"
-        android:textSize="20sp"
-        android:textColorHint="#000" />
-    <Button
-        android:id="@+id/registerBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:textAllCaps="false"
-        android:text="Login"/>
-    <TextView
-        android:id="@+id/registerQn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Have an Account?  Login"
-        android:gravity="center"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Registration"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/registerQn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Have an Account?  Login" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
